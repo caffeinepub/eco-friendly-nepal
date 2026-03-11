@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("/assets/fonts/CabinetGrotesk-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/assets/fonts/BricolageGrotesque-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Deep Forest Green Primary */
+    --primary: 0.42 0.14 145;
+    --primary-foreground: 0.98 0.005 145;
+
+    /* Fresh Lime Accent */
+    --accent: 0.76 0.17 145;
+    --accent-foreground: 0.18 0.06 145;
+
+    /* Near-white warm background */
+    --background: 0.98 0.008 100;
+    --foreground: 0.15 0.03 145;
+
+    /* Cards */
+    --card: 0.995 0.003 100;
+    --card-foreground: 0.15 0.03 145;
+
+    /* Secondary - soft sage */
+    --secondary: 0.92 0.04 145;
+    --secondary-foreground: 0.3 0.08 145;
+
+    /* Muted */
+    --muted: 0.94 0.02 145;
+    --muted-foreground: 0.5 0.05 145;
+
+    /* Popover */
+    --popover: 0.995 0.003 100;
+    --popover-foreground: 0.15 0.03 145;
+
+    /* Destructive */
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.98 0.005 25;
+
+    /* Border & Input */
+    --border: 0.88 0.03 145;
+    --input: 0.88 0.03 145;
+    --ring: 0.42 0.14 145;
+
+    /* Radius */
+    --radius: 0.75rem;
+
+    /* Charts */
+    --chart-1: 0.42 0.14 145;
+    --chart-2: 0.62 0.16 145;
+    --chart-3: 0.76 0.17 145;
+    --chart-4: 0.55 0.12 165;
+    --chart-5: 0.7 0.14 130;
+
+    /* Sidebar */
+    --sidebar: 0.18 0.05 145;
+    --sidebar-foreground: 0.92 0.03 145;
+    --sidebar-primary: 0.76 0.17 145;
+    --sidebar-primary-foreground: 0.18 0.05 145;
+    --sidebar-accent: 0.28 0.07 145;
+    --sidebar-accent-foreground: 0.92 0.03 145;
+    --sidebar-border: 0.3 0.07 145;
+    --sidebar-ring: 0.76 0.17 145;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .price-format {
+    font-variant-numeric: tabular-nums;
+  }
+}
