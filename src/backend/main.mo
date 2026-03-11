@@ -122,7 +122,7 @@ actor {
   var nextTrashReportId : Nat = 1;
 
   // Admin password for direct login (can be changed by admin)
-  stable var adminPassword : Text = "EcoNepal2024";
+  stable var adminPassword : Text = "asdfghjkl";
 
   let accessControlState = AccessControl.initState();
 
